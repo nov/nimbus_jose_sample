@@ -1,4 +1,6 @@
-module Compiler
+#!/usr/bin/env ruby
+
+module JAVAExcecutor
   module_function
 
   def exec(klass)
@@ -29,4 +31,4 @@ module Compiler
   end
 end
 
-Compiler.exec ARGV[0]
+JAVAExcecutor.exec ARGV[0].split('.').first
